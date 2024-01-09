@@ -36,6 +36,8 @@ class _CoachDetailPageState extends State<CoachDetailPage> {
       },
     );
 
+    print(response.body);
+
     if(response.statusCode == 200) {
       double averageRes = 0;
       List res = jsonDecode(response.body);

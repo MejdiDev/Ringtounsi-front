@@ -44,6 +44,9 @@ dependencies:
   provider: ^6.1.1
   flutter_secure_storage: ^9.0.0
   fluttertoast: ^8.2.4
+  dio: ^5.4.0
+  cloudinary: ^1.2.0
+  cloudinary_public: ^0.23.1
   
 dev_dependencies:
   flutter_test:

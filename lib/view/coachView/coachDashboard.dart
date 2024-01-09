@@ -96,34 +96,13 @@ class _CoachDashboardState extends State<CoachDashboard> {
         widget = CoachProfileScreen(user: user);
         break;
       case 1:
-        widget = AddPostScreen();
+        widget = AddPostScreen(coachId: user.id!);
         break;
       case 3:
         widget = SearchCoachScreen();
         break;
       default:
-        widget = AllPostsScreen(
-          posts: [
-            Post(
-              userName: 'User 1',
-              description: 'Description of post 1',
-              imagePath:
-                  'https://via.placeholder.com/150', // Replace with actual image URL
-            ),
-            Post(
-              userName: 'User 2',
-              description: 'Description of post 2',
-              imagePath:
-                  'https://via.placeholder.com/150', // Replace with actual image URL
-            ),
-            Post(
-              userName: 'User 3',
-              description: 'Description of post 3',
-              imagePath:
-                  'https://via.placeholder.com/150', // Replace with actual image URL
-            ),
-          ],
-        );
+        widget = AllPostsScreen();
         break;
     }
     return widget;
